@@ -1,0 +1,29 @@
+/*  --------------- Box Sizing -----------------  */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*  --------------- Utility Classes -----------------  */
+
+.container {
+  width: 80vw;
+  margin: auto;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 0.8rem 0.8rem 0;
+  display: inline-block;
+  padding: 1.4rem;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
