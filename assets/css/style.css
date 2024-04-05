@@ -12,8 +12,6 @@ html {
 }
 
 /*  --------------- Utility Classes -----------------  */
-.container {
-}
 
 body {
   font-family: "Belanosima", sans-serif;
@@ -127,10 +125,11 @@ body {
   align-items: center;
   z-index: 1000;
   transform: translate(0, -5%);
+  letter-spacing: 0.1rem;
 }
 
 .discover h2 {
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -200,9 +199,9 @@ main {
 .lodge-sect,
 .rent-sect,
 .contact-sect {
-  border-bottom: 10px solid #f27127;
-  border-top: 10px solid #f27127;
   height: 40vh;
+  border-bottom: 10px solid #878c61;
+  border-top: 10px solid #878c61;
   transition: 0.4s;
 }
 
@@ -210,6 +209,8 @@ main {
 .lodge-sect:hover,
 .rent-sect:hover,
 .contact-sect:hover {
+  border-bottom: 10px solid #f27127;
+  border-top: 10px solid #f27127;
 }
 
 .water-con-sect {
@@ -231,9 +232,28 @@ main {
 }
 
 .contact-sect {
-  background-image: url(../img/vert-buddies.jpg);
+  background-image: url(../img/vert-landscape.jpg);
   background-size: cover;
   background-position: center;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #4b594a;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+footer h6 {
+  font-weight: 400;
+}
+
+footer a {
+  color: #fff;
 }
 
 /*  --------------- Animations -----------------  */
