@@ -248,10 +248,16 @@ main {
   text-align: center;
 }
 
+.socials h2 {
+  margin-bottom: .5rem;
+}
+
 .socials a {
   color: #fff;
   font-size: 2rem;
   margin: 3rem 1rem;
+  text-decoration: none;
+  border-bottom: 5px solid #f27127;
 }
 
 footer {
