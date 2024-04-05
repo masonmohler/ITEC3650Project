@@ -17,6 +17,7 @@ body {
   font-family: "Belanosima", sans-serif;
   font-weight: 400;
   background-color: #000;
+  color: #fff;
 }
 
 .bg-img-carousel {
@@ -237,6 +238,22 @@ main {
   background-position: center;
 }
 
+.contact-info h1 {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.socials {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.socials a {
+  color: #fff;
+  font-size: 2rem;
+  margin: 3rem 1rem;
+}
+
 footer {
   width: 100%;
   display: flex;
@@ -254,6 +271,12 @@ footer h6 {
 
 footer a {
   color: #fff;
+}
+
+.contact-footer {
+  position: absolute;
+  bottom: 0;
+  z-index: 10000;
 }
 
 /*  --------------- Animations -----------------  */
