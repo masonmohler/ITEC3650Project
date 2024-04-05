@@ -6,19 +6,149 @@ html {
 *,
 *:before,
 *:after {
+  margin: 0;
+  padding: 0;
   box-sizing: inherit;
 }
 
 /*  --------------- Utility Classes -----------------  */
-
 .container {
-  width: 80vw;
-  margin: auto;
+}
+
+body {
+  font-family: "Belanosima", sans-serif;
+  font-weight: 400;
+  background-color: #000;
+}
+
+.bg-img-carousel {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: fade 20s ease-in-out infinite alternate;
+}
+
+.bg-img:nth-of-type(1) {
+  animation-delay: 0s;
+}
+
+.bg-img:nth-of-type(2) {
+  animation-delay: 5s;
+}
+.bg-img:nth-of-type(3) {
+  animation-delay: 10s;
+}
+.bg-img:nth-of-type(4) {
+  animation-delay: 15s;
+}
+
+.overlay {
+  background-color: rgb(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.main-logo {
+  width: 8rem;
+  height: 8rem;
+  margin-right: 2rem;
+}
+
+.main-nav {
+  position: absolute;
+  z-index: 10000;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.4);
+}
+
+.main-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.main-nav ul li a {
+  margin: 2rem;
+  color: #fff;
+  font-size: 2.4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 1rem;
+  transition: 0.4s;
+}
+
+.main-nav ul li a:hover {
+  cursor: pointer;
+  background-color: rgb(0, 0, 0, 0.4);
+}
+
+.title-card {
+  color: #fff;
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0, -5%);
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+.discover {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 1000;
+  transform: translate(0, -5%);
+}
+
+.discover h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.title-card h1 {
+  transform: scaley(1.4);
+  font-size: 6.4rem;
+  margin-bottom: 2.4rem;
+  font-weight: 600;
+}
+
+.title-card h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
 }
 
 .arrow {
-  border: solid black;
-  border-width: 0 0.8rem 0.8rem 0;
+  border: solid #fff;
+  border-width: 0 0.7rem 0.7rem 0;
   display: inline-block;
   padding: 1.4rem;
 }
@@ -26,4 +156,90 @@ html {
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+  animation: bounce 2s ease-in-out infinite alternate;
+  animation-delay: 2s;
+}
+
+.nav-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80vh;
+  font-size: 2rem;
+  padding: 1rem;
+  width: 100%;
+  text-transform: uppercase;
+  gap: 1rem;
+  color: #fff;
+  position: relative;
+}
+
+.nav-cards h2 {
+  font-weight: 400;
+  padding: 2rem;
+  text-align: center;
+  background-color: rgb(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.water-con-sect {
+  background-image: url(../img/vert-canoe.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.lodge-sect {
+  background-image: url(../img/bear-ridge-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.rent-sect {
+  background-image: url(../img/vert-launch-point.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-sect {
+  background-image: url(../img/vert-buddies.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cont-over {
+  background-color: rgb(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/*  --------------- Animations -----------------  */
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0) rotate(45deg); /* Start and end position */
+  }
+  50% {
+    transform: translateY(10px) rotate(45deg); /* Midpoint, going up */
+  }
 }
