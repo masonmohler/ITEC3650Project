@@ -34,21 +34,23 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  animation: fade 20s ease-in-out infinite alternate;
+  animation: fade 20s ease-in-out alternate infinite;
 }
 
 .bg-img:nth-of-type(1) {
-  animation-delay: 0s;
+  animation-delay: -5s; /* Start immediately */
 }
 
 .bg-img:nth-of-type(2) {
-  animation-delay: 5s;
+  animation-delay: -10s; /* Delay the start by 5s */
 }
+
 .bg-img:nth-of-type(3) {
-  animation-delay: 10s;
+  animation-delay: -15s; /* Delay the start by 10s */
 }
+
 .bg-img:nth-of-type(4) {
-  animation-delay: 15s;
+  animation-delay: -20s; /* Delay the start by 15s */
 }
 
 .overlay {
@@ -96,7 +98,7 @@ body {
 
 .main-nav ul li a:hover {
   cursor: pointer;
-  background-color: rgb(0, 0, 0, 0.4);
+  background-color: rgb(242, 113, 39, 0.8);
 }
 
 .title-card {
@@ -147,7 +149,7 @@ body {
 }
 
 .arrow {
-  border: solid #fff;
+  border: solid #f27127;
   border-width: 0 0.7rem 0.7rem 0;
   display: inline-block;
   padding: 1.4rem;
@@ -160,15 +162,20 @@ body {
   animation-delay: 2s;
 }
 
+main {
+  margin: 2rem;
+  max-width: 100%;
+}
+
 .nav-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 80vh;
+  grid-template-columns: 1fr 1fr;
   font-size: 2rem;
   padding: 1rem;
-  width: 100%;
+  margin: 4rem auto;
+  width: 80vw;
   text-transform: uppercase;
-  gap: 1rem;
+  gap: 3rem;
   color: #fff;
   position: relative;
 }
@@ -179,6 +186,30 @@ body {
   text-align: center;
   background-color: rgb(0, 0, 0, 0.5);
   z-index: 1000;
+}
+
+.nav-cards a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+
+.water-con-sect,
+.lodge-sect,
+.rent-sect,
+.contact-sect {
+  border-bottom: 10px solid #f27127;
+  border-top: 10px solid #f27127;
+  height: 40vh;
+  transition: 0.4s;
+}
+
+.water-con-sect:hover,
+.lodge-sect:hover,
+.rent-sect:hover,
+.contact-sect:hover {
 }
 
 .water-con-sect {
@@ -203,16 +234,6 @@ body {
   background-image: url(../img/vert-buddies.jpg);
   background-size: cover;
   background-position: center;
-}
-
-.cont-over {
-  background-color: rgb(0, 0, 0, 0.3);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
 }
 
 /*  --------------- Animations -----------------  */
