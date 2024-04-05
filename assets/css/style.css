@@ -87,7 +87,7 @@ body {
 .main-nav ul li a {
   margin: 2rem;
   color: #fff;
-  font-size: 2.4rem;
+  font-size: 2rem;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -113,6 +113,7 @@ body {
   transform: translate(0, -5%);
   font-weight: 400;
   letter-spacing: 0.1rem;
+  text-align: center;
 }
 
 .discover {
@@ -137,7 +138,7 @@ body {
 
 .title-card h1 {
   transform: scaley(1.4);
-  font-size: 6.4rem;
+  font-size: 5rem;
   margin-bottom: 2.4rem;
   font-weight: 600;
 }
@@ -170,7 +171,7 @@ main {
 .nav-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding: 1rem;
   margin: 4rem auto;
   width: 80vw;
@@ -182,7 +183,7 @@ main {
 
 .nav-cards h2 {
   font-weight: 400;
-  padding: 2rem;
+  padding: 1.8rem;
   text-align: center;
   background-color: rgb(0, 0, 0, 0.5);
   z-index: 1000;
@@ -249,7 +250,7 @@ main {
 }
 
 .socials h2 {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .socials a {
@@ -311,5 +312,85 @@ footer a {
   }
   50% {
     transform: translateY(10px) rotate(45deg); /* Midpoint, going up */
+  }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 1100px) {
+  body {
+    font-size: 1rem; /* Adjust base font size for smaller screens */
+  }
+
+  /* Adjustments specific to mobile devices */
+
+  .main-nav ul {
+    flex-direction: column;
+  }
+
+  .main-nav ul li a {
+    display: none;
+    font-size: 1.4rem; /* Further reduce font size for mobile navigation */
+  }
+
+  .main-logo {
+    width: 8rem;
+    height: 8rem;
+    margin: 0;
+  }
+
+  .title-card {
+    text-align: center;
+  }
+
+  .title-card h1 {
+    font-size: 4rem; /* Adjust title font size for mobile */
+  }
+
+  .title-card h2 {
+    font-size: 2rem; /* Adjust subtitle font size for mobile */
+  }
+
+  .discover h2 {
+    font-size: 1.4rem;
+  }
+
+  .nav-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-cards h2 {
+    font-size: 2.2rem;
+  }
+
+  /* Adjustments for mobile footer */
+  footer {
+    font-size: 1.4rem; /* Reduce font size for mobile footer */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1rem; /* Adjust base font size for smaller screens */
+  }
+
+  .title-card h1 {
+    font-size: 3.2rem; /* Adjust title font size for mobile */
+  }
+
+  .title-card h2 {
+    font-size: 1.8rem; /* Adjust subtitle font size for mobile */
+  }
+
+  .discover h2 {
+    font-size: 1.2rem;
+  }
+
+  .nav-cards h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Adjustments for mobile footer */
+  footer {
+    font-size: 1rem; /* Reduce font size for mobile footer */
   }
 }
