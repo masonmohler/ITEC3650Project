@@ -37,19 +37,19 @@ body {
 }
 
 .bg-img:nth-of-type(1) {
-  animation-delay: -5s; /* Start immediately */
+  animation-delay: -5s;
 }
 
 .bg-img:nth-of-type(2) {
-  animation-delay: -10s; /* Delay the start by 5s */
+  animation-delay: -10s;
 }
 
 .bg-img:nth-of-type(3) {
-  animation-delay: -15s; /* Delay the start by 10s */
+  animation-delay: -15s;
 }
 
 .bg-img:nth-of-type(4) {
-  animation-delay: -20s; /* Delay the start by 15s */
+  animation-delay: -20s;
 }
 
 .overlay {
@@ -205,6 +205,11 @@ main {
   border-bottom: 10px solid #878c61;
   border-top: 10px solid #878c61;
   transition: 0.4s;
+  scale: 0.8;
+  opacity: 0;
+  animation: fadein linear forwards;
+  animation-timeline: view();
+  animation-range: 0px 400px;
 }
 
 .water-con-sect:hover,
@@ -308,20 +313,25 @@ footer a {
 @keyframes bounce {
   0%,
   100% {
-    transform: translateY(0) rotate(45deg); /* Start and end position */
+    transform: translateY(0) rotate(45deg);
   }
   50% {
-    transform: translateY(10px) rotate(45deg); /* Midpoint, going up */
+    transform: translateY(10px) rotate(45deg);
+  }
+}
+
+@keyframes fadein {
+  to {
+    scale: 1;
+    opacity: 1;
   }
 }
 
 /* Media query for mobile devices */
 @media screen and (max-width: 1100px) {
   body {
-    font-size: 1rem; /* Adjust base font size for smaller screens */
+    font-size: 1rem;
   }
-
-  /* Adjustments specific to mobile devices */
 
   .main-nav ul {
     flex-direction: column;
@@ -329,7 +339,7 @@ footer a {
 
   .main-nav ul li a {
     display: none;
-    font-size: 1.4rem; /* Further reduce font size for mobile navigation */
+    font-size: 1.4rem;
   }
 
   .main-logo {
@@ -343,11 +353,11 @@ footer a {
   }
 
   .title-card h1 {
-    font-size: 4rem; /* Adjust title font size for mobile */
+    font-size: 4rem;
   }
 
   .title-card h2 {
-    font-size: 2rem; /* Adjust subtitle font size for mobile */
+    font-size: 2rem;
   }
 
   .discover h2 {
@@ -362,35 +372,44 @@ footer a {
     font-size: 2.2rem;
   }
 
-  /* Adjustments for mobile footer */
   footer {
-    font-size: 1.4rem; /* Reduce font size for mobile footer */
+    font-size: 1.4rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   body {
-    font-size: 1rem; /* Adjust base font size for smaller screens */
+    font-size: 1rem;
   }
 
   .title-card h1 {
-    font-size: 3.2rem; /* Adjust title font size for mobile */
+    font-size: 3.2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .title-card h2 {
-    font-size: 1.8rem; /* Adjust subtitle font size for mobile */
+    font-size: 1.6rem;
+    margin: 1rem;
+  }
+
+  .discover {
+    transform: translate(0, -10%);
   }
 
   .discover h2 {
     font-size: 1.2rem;
   }
 
+  .nav-cards {
+    margin: auto;
+  }
+
   .nav-cards h2 {
     font-size: 1.8rem;
   }
 
-  /* Adjustments for mobile footer */
   footer {
-    font-size: 1rem; /* Reduce font size for mobile footer */
+    font-size: 1rem;
   }
 }
