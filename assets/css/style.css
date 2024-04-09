@@ -371,6 +371,15 @@ footer a {
     padding: 0.5rem;
   }
 
+  details > summary {
+    list-style: none;
+  }
+
+  details > summary::marker, /* Latest Chrome, Edge, Firefox */ 
+  details > summary::-webkit-details-marker /* Safari */ {
+    display: none;
+  }
+
   .main-menu summary:hover {
     background-color: #f27127;
     cursor: pointer;
@@ -436,6 +445,11 @@ footer a {
 @media screen and (max-width: 768px) {
   body {
     font-size: 1rem;
+  }
+
+  .main-menu summary:hover {
+    background-color: initial;
+    cursor: pointer;
   }
 
   .title-card h1 {
