@@ -197,6 +197,7 @@ main {
   text-align: center;
   background-color: rgb(0, 0, 0, 0.5);
   z-index: 1000;
+  letter-spacing: 0.1rem;
 }
 
 .nav-cards a {
@@ -301,6 +302,10 @@ footer a {
   z-index: 10000;
 }
 
+.main-menu {
+  display: none;
+}
+
 /*  --------------- Animations -----------------  */
 @keyframes fade {
   0% {
@@ -348,12 +353,46 @@ footer a {
     font-size: 1rem;
   }
 
-  .main-nav ul {
+  .main-nav ul li a {
+    display: none;
+  }
+
+  .main-menu {
+    display: initial;
+    font-size: 1.8rem;
+  }
+
+  .main-menu summary {
+    list-style-type: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    transition: 0.4s;
+    padding: 0.5rem;
+  }
+
+  .main-menu summary:hover {
+    background-color: #f27127;
+    cursor: pointer;
+  }
+
+  .main-menu[open] > summary {
+    border-bottom: 3px solid #f27127;
+  }
+
+  .main-menu ul {
+    margin: 0;
+    text-align: center;
     flex-direction: column;
   }
 
-  .main-nav ul li a {
-    display: none;
+  .main-menu ul li {
+    margin-bottom: 1rem;
+  }
+
+  .main-menu ul li a {
+    display: initial;
+    padding: 0.5rem;
     font-size: 1.4rem;
   }
 
@@ -369,6 +408,8 @@ footer a {
 
   .title-card h1 {
     font-size: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .title-card h2 {
@@ -398,14 +439,13 @@ footer a {
   }
 
   .title-card h1 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     margin-left: 1rem;
     margin-right: 1rem;
   }
 
   .title-card h2 {
-    font-size: 1.6rem;
-    margin: 1rem;
+    font-size: 1.5rem;
   }
 
   .discover {
