@@ -26,6 +26,12 @@ body {
   position: relative;
 }
 
+.content-page {
+  width: 100%;
+  height: 15vh;
+  position: relative;
+}
+
 .bg-img {
   width: 100%;
   height: 100%;
@@ -394,7 +400,7 @@ footer a {
   }
 
   .discover {
-    transform: translate(0, -10%);
+    height: 100svh;
   }
 
   .discover h2 {
