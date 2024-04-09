@@ -331,7 +331,12 @@ footer a {
 }
 
 @keyframes fadein {
-  to {
+  0% {
+    scale: 0.8;
+    opacity: 0;
+  }
+
+  100% {
     scale: 1;
     opacity: 1;
   }
