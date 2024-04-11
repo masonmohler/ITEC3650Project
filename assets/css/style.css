@@ -277,6 +277,19 @@ main {
   border-bottom: 5px solid #f27127;
 }
 
+/*  --------------- Griffin CSS -----------------  */
+
+details > summary {
+  list-style-type: none;
+}
+
+details {
+  background-color: #f27127;
+}
+
+
+/*  --------------- End of Griffin CSS -----------------  */
+
 footer {
   width: 100%;
   display: flex;
