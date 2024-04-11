@@ -39,6 +39,7 @@ body {
   width: 80vw;
   margin: auto;
   margin-top: 2rem;
+  height: 100svh;
 }
 
 .bg-img-carousel {
@@ -347,6 +348,8 @@ footer a {
 .main-menu {
   display: none;
 }
+
+
 
 /*  --------------- Animations -----------------  */
 @keyframes fade {
