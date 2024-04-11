@@ -1,3 +1,18 @@
+/*  --------------- Theme -----------------  */
+
+/*
+
+Background Color: #101010
+Text Color: #fff
+Dark Green: #4b594a
+Light Green: #878c61
+Orange: #f27127
+
+Font: "Belanosima", sans-serif
+Available Weights: 400, 600, 700
+
+*/
+
 /*  --------------- Box Sizing -----------------  */
 
 html {
@@ -286,7 +301,6 @@ details > summary {
 details {
   background-color: #f27127;
 }
-
 
 /*  --------------- End of Griffin CSS -----------------  */
 
