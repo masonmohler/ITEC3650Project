@@ -40,6 +40,9 @@ body {
   margin: auto;
   margin-top: 2rem;
   height: 100svh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; 
 }
 
 .bg-img-carousel {
@@ -309,13 +312,24 @@ details {
   background-color: #f27127;
 }
 
-.container h2 {
+h2 {
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: .1rem;
   text-align: center;
 }
 
+.description img{
+  grid-column: 1;
+}
+
+.description p{
+  grid-column: 2;
+}
+
+amenities {
+  grid-column: 1;
+}
 
 
 /*  --------------- End of Griffin CSS -----------------  */
