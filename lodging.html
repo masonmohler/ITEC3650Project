@@ -30,22 +30,34 @@
             <li><a href="lodging.html">Lodging</a></li>
             <li><a href="rental.html">Rental</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li>
+              <details class="main-menu">
+                <summary>Menu</summary>
+                <div>
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lodging.html">Lodging</a></li>
+                    <li><a href="rental.html">Rental</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </details>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
-    <h2>Bear Ridge</h2>
+    <h2 class="content-title">Bear Ridge</h2> <!--Added class to h2 so that you're not just targetting every h2-->
     <main class="container">
-      <div class="lodging-img">
-        <img src="assets/img/bear-ridge-1.jpg" />
-      </div>
+      <!--Removed the div for the img and applied class directly to element-->
+        <img class="lodging-img" src="assets/img/bear-ridge-1.jpg" />
       <div class="lodging-content">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu ornare ante, ullamcorper venenatis metus. Sed a metus metus. Phasellus vel efficitur risus, vel aliquam quam. Vestibulum fermentum vel mi quis maximus. Donec vel augue pellentesque, mattis tortor sit amet, hendrerit purus. Proin at elit ut diam mollis vehicula vitae ut ipsum. Nulla vel mattis ligula, id aliquam eros. Quisque iaculis feugiat sapien malesuada porta. Morbi fermentum est quam, quis finibus diam scelerisque nec. Curabitur et ex iaculis, vestibulum nulla quis, porttitor erat. Duis vitae dolor et nunc interdum dictum. Curabitur interdum a lectus quis porta.
         </p>
       </div>
       <div class="amenities">
-        <h3>Amenities</h3>
+        <h3 class="sub-heading">Amenities</h3>
         <ul>
           <li>Here</li>
           <li>Here</li>
@@ -65,14 +77,14 @@
         <img src="" />
       </div>
       <div class="additonal-info">
-        <h3>Rates</h3>
+        <h3 class="sub-heading">Rates</h3>
         <ul>
           <li>$</li>
           <li>$$</li>
         </ul>
       </div>
       <div class="address-info">
-        <h3>Address:</h3>
+        <h3 class="sub-heading">Address:</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu ornare ante, ullamcorper venenatis metus. Sed a metus metus. Phasellus vel efficitur risus, vel aliquam quam.</p>
         <button>Map</button>
       </div>
