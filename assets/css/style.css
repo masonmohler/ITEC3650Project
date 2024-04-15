@@ -317,18 +317,64 @@ h2 {
   font-weight: 400;
   letter-spacing: .1rem;
   text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.description img{
-  grid-column: 1;
+.lodging-img {
+  border-radius: 15px;
 }
 
-.description p{
-  grid-column: 2;
+.amenities ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
 }
 
-amenities {
-  grid-column: 1;
+.amenities h3 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.amenities ul li {
+  text-align: center;
+  padding-bottom: 1rem;
+  list-style-type: none;
+}
+
+
+.additonal-info h3 {
+  text-align: center;
+}
+
+.additonal-info ul li {
+  text-align: center;
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.address-info {
+  text-align: center;
+}
+
+.address-info h3 {
+  padding-bottom: 1rem;
+}
+
+.address-info p {
+  padding-bottom: 1rem;
+}
+
+.address-info button {
+  background-color: #f27127;
+  padding: 1% 5%;
+  border-radius: 15%;
+}
+
+/*  --------------- Canoe Page -----------------  */
+
+.canoe-img {
+  width: 100vw;
 }
 
 
