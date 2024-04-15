@@ -377,7 +377,50 @@ main {
   background-color: #f27127;
   padding: 1% 5%;
   border-radius: 15%;
+  border-color: #878c61;
+  font-family: "Belanosima", sans-serif;
+  font-weight: 400;
+  color: #fff;
+
 }
+
+.sub-heading {
+  text-align: center;
+  padding-bottom: .5rem;
+}
+
+.water-levels p {
+  text-align: center;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+}
+
+.water-levels select {
+  background-color: #f27127;
+  color: #fff;
+  font-family: "Belanosima", sans-serif;
+  font-size: 1.4rem;
+  padding: 1rem;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+}
+
+.water-levels select option {
+  background-color: #f27127;
+  color: #fff;
+  padding: 1rem;
+}
+
+.water-levels select option:first-child{
+  display: none;
+}
+
+.button-container {
+  text-align: center;
+  padding-top: 1rem;
+}
+
 
 /*  --------------- Canoe Page -----------------  */
 
