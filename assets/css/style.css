@@ -330,10 +330,6 @@ main {
   margin-top: 1rem;
 }
 
-.lodging-img {
-  border-radius: 15px;
-}
-
 .amenities ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
