@@ -432,6 +432,10 @@ main {
   align-content: center;
 }
 
+.book-stay select option:first-child {
+  display: none;
+}
+
 .night-select {
   margin-right: 1rem;
   background-color: #fff;
@@ -443,6 +447,30 @@ main {
   border: none;
   cursor: pointer;
   text-transform: uppercase;
+}
+
+.rent-canoe {
+  margin-right: 1rem;
+  background-color: #fff;
+  color: #f27127;
+  font-family: "Belanosima", sans-serif;
+  font-size: 1.4rem;
+  padding: 1rem;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.rent-amount {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+}
+
+.rent-amount select option:first-child {
+  display: none;
 }
 
 .book-now {
@@ -559,6 +587,31 @@ p {
   grid-template-columns: 1fr 1fr;
   margin-top: 1rem;
 }
+
+.two-col {
+  margin-right: 1rem;
+}
+
+.placeholder {
+  text-align: center;
+}
+
+.map-btn {
+  background-color: #f27127;
+  color: #fff;
+  border: none;
+  font-size: 1.4rem;
+  font-family: "Belanosima", sans-serif;
+  text-transform: uppercase;
+  transition: .4s;
+}
+
+.map-btn:hover {
+  background-color: #fff;
+  color: #f27127;
+  cursor: pointer;
+}
+
 
 /*  --------------- End of Overwrite Griffin CSS -----------------  */
 

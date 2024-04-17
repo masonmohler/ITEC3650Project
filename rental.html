@@ -57,11 +57,6 @@
     <main class="container">
       <!--Removed the div for the img and applied class directly to element-->
       <img class="canoe-img" src="assets/img/bear-ridge-1.jpg" />
-      <p class="canoe-content">
-        <!--Removed the div for the img and applied class directly to element-->
-        Come float with us! We only use the highest quality canoes manufactured
-        right here in Newton County.
-      </p>
       <div class="prices">
         <h3 class="sub-heading">Prcies & Fees</h3>
         <details class="detail-button" id="rental-prices">
@@ -101,14 +96,40 @@
           </div>
         </details>
       </div>
+      <div class="rental-options">
+        <p class="canoe-content">
+          <!--Removed the div for the img and applied class directly to element-->
+          Come float with us! We only use the highest quality canoes
+          manufactured right here in Newton County.
+        </p>
+        <div class="rent-amount">
+          <select class="rent-canoe" name="" id="">
+            <option value="">Select Amount of Canoes</option>
+            <option value="">1 Canoe</option>
+            <option value="">2 Canoes</option>
+            <option value="">3 Canoes</option>
+            <option value="">4 Canoes</option>
+            <option value="">5 Canoes</option>
+            <option value="">6 Canoes</option>
+            <option value="">7 Canoes</option>
+            <option value="">8 Canoes</option>
+            <option value="">9 Canoes</option>
+            <option value="">10 Canoes</option>
+          </select>
+          <button class="book-now">Rent Now</button>
+        </div>
+      </div>
       <div class="img-slider">
         <img class="canoe-img" src="assets/img/bg3.jpg" alt="" />
       </div>
+      <div class="placeholder">
+        <p>Placeholder for Graphs</p>
+      </div>
       <div class="water-levels">
         <h3 class="sub-heading">Water Levels</h3>
-        <p>Please choose a date & water site to view the water level information.</p>
-        <p>Dates can be either: Today, or Last 7 Days</p>
-        <p>Site can be one of the following: Site 1, Site 2, Site 3, Site 4</p>
+        <p>
+          Please choose a date & water site to view the water level information.
+        </p>
         <div class="button-container">
           <select id="date-selector">
             <option value="">Select Date Range</option>
@@ -119,10 +140,10 @@
         <div class="button-container">
           <select id="water-site-selector">
             <option value="">Select Water Site</option>
-            <option value="site1">Water Site 1</option>
-            <option value="site2">Water Site 2</option>
-            <option value="site2">Water Site 3</option>
-            <option value="site2">Water Site 4</option>
+            <option value="07055646">Boxley</option>
+            <option value="07055680">Pruitt</option>
+            <option value="07055780">Carver</option>
+            <option value="07055660">Ponca</option>
           </select>
         </div>
       </div>
