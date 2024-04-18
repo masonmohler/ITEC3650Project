@@ -342,10 +342,15 @@ main {
 
 .address-info {
   text-align: center;
+  align-self: center;
+  padding: 2rem;
+  border: 10px solid #4b594a;
+  background-color: rgb(75, 89, 74, 0.4);
 }
 
 .address-info h3 {
   padding-bottom: 1rem;
+  font-size: 3rem;
 }
 
 .address-info p {
@@ -419,7 +424,6 @@ main {
 }
 
 .left-align {
-  margin-top: 2rem;
   margin-bottom: 0.5rem;
   text-align: left;
   border-bottom: 5px solid #f27127;
@@ -430,6 +434,8 @@ main {
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-content: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .book-stay select option:first-child {
@@ -480,7 +486,8 @@ main {
   font-size: 1.4rem;
   font-family: "Belanosima", sans-serif;
   text-transform: uppercase;
-  transition: .4s;
+  transition: 0.4s;
+  padding: 1rem;
 }
 
 .book-now:hover {
@@ -572,7 +579,7 @@ main {
 }
 
 .sub-heading {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 400;
 }
 
@@ -580,6 +587,8 @@ p {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .other-info {
@@ -590,6 +599,11 @@ p {
 
 .two-col {
   margin-right: 1rem;
+}
+
+.two-col li {
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  font-size: 1.2rem;
 }
 
 .placeholder {
@@ -603,7 +617,8 @@ p {
   font-size: 1.4rem;
   font-family: "Belanosima", sans-serif;
   text-transform: uppercase;
-  transition: .4s;
+  transition: 0.4s;
+  margin-top: .5rem;
 }
 
 .map-btn:hover {
@@ -612,6 +627,40 @@ p {
   cursor: pointer;
 }
 
+.lodging-p p {
+  line-height: 3rem;
+}
+
+.lodge {
+  grid-template-areas:
+    "image lodge-info"
+    "add-info amen"
+    "........ book-btns";
+}
+
+.lodging-img {
+  grid-area: image;
+}
+
+.lodging-p {
+  grid-area: lodge-info;
+  align-items: center;
+}
+
+.amenities {
+  grid-area: amen;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.address-info {
+  grid-area: add-info;
+}
+
+.book-stay {
+  grid-area: book-btns;
+}
 
 /*  --------------- End of Overwrite Griffin CSS -----------------  */
 
@@ -783,6 +832,37 @@ footer a {
 @media screen and (max-width: 960px) {
   .container {
     grid-template-columns: 1fr;
+  }
+
+  .lodge {
+    grid-template-areas:
+      "image"
+      "lodge-info"
+      "amen"
+      "book-btns"
+      "add-info";
+  }
+
+  .two-col,
+  .book-stay {
+    grid-template-columns: 1fr;
+  }
+
+  .night-select {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .container p {
+    padding: 0;
+  }
+
+  .amenities {
+    padding: 0;
+  }
+
+  .book-stay {
+    padding: 0;
   }
 }
 
