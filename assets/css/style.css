@@ -359,9 +359,7 @@ main {
 
 .address-info button {
   background-color: #f27127;
-  padding: 1% 5%;
-  border-radius: 15%;
-  border-color: #878c61;
+  padding: 1rem;
   font-family: "Belanosima", sans-serif;
   font-weight: 400;
   color: #fff;
@@ -668,6 +666,56 @@ p {
 
 .book-stay {
   grid-area: book-btns;
+}
+
+.rent {
+  grid-template-areas:
+    "img prices"
+    "rent lower"
+    "graph water";
+}
+
+.canoe-img {
+  grid-area: img;
+}
+
+.prices {
+  grid-area: prices;
+}
+
+.rental-options {
+  grid-area: rent;
+  align-self: center;
+}
+
+.rental-options {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.rental-options p {
+  padding: 0;
+}
+
+.water-graph {
+  width: 100%;
+}
+
+.lower {
+  grid-area: lower;
+}
+
+.placeholder {
+  grid-area: graph;
+}
+
+.water-levels {
+  grid-area: water;
+}
+
+.canoe-content {
+  line-height: 3rem;
+  margin-bottom: 2rem;
 }
 
 /* Customize Previous/Next/Dots/Autoplay */

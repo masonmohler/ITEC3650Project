@@ -6,11 +6,7 @@
     <meta name="author" content="Mason Mohler, Griffin Revis" />
     <meta name="description" content="Newton County Adventure Company" />
     <title>Newton County Adventure Company</title>
-    <link
-      rel="icon"
-      href="assets/img/logo-white-transparent.png"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="assets/img/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,11 +50,11 @@
     </header>
     <h2 class="content-title">Canoe Rentals</h2>
     <!--Added class to h2 so that you're not just targetting every h2-->
-    <main class="container">
+    <main class="container rent">
       <!--Removed the div for the img and applied class directly to element-->
       <img class="canoe-img" src="assets/img/bear-ridge-1.jpg" />
       <div class="prices">
-        <h3 class="sub-heading">Prcies & Fees</h3>
+        <h3 class="sub-heading">Prices & Fees</h3>
         <details class="detail-button" id="rental-prices">
           <summary>1-Day Rental Prices</summary>
           <div>
@@ -97,10 +93,11 @@
         </details>
       </div>
       <div class="rental-options">
+        <h3 class="sub-heading left-align">Come Float with Us</h3>
         <p class="canoe-content">
           <!--Removed the div for the img and applied class directly to element-->
-          Come float with us! We only use the highest quality canoes
-          manufactured right here in Newton County.
+          We only use the highest quality canoes manufactured right here in
+          Newton County.
         </p>
         <div class="rent-amount">
           <select class="rent-canoe" name="" id="">
@@ -120,32 +117,36 @@
         </div>
       </div>
       <div class="img-slider">
-        <img class="canoe-img" src="assets/img/bg3.jpg" alt="" />
+        <img class="canoe-img lower" src="assets/img/bg3.jpg" alt="" />
       </div>
       <div class="placeholder">
-        <p>Placeholder for Graphs</p>
+        <canvas id="chartjs-0" class="water-graph"></canvas>
       </div>
       <div class="water-levels">
-        <h3 class="sub-heading">Water Levels</h3>
-        <p>
-          Please choose a date & water site to view the water level information.
-        </p>
-        <div class="button-container">
-          <select id="date-selector">
-            <option value="">Select Date Range</option>
-            <option value="today">Today</option>
-            <option value="7days">Last 7 Days</option>
-          </select>
-        </div>
-        <div class="button-container">
-          <select id="water-site-selector">
-            <option value="">Select Water Site</option>
-            <option value="07055646">Boxley</option>
-            <option value="07055680">Pruitt</option>
-            <option value="07055780">Carver</option>
-            <option value="07055660">Ponca</option>
-          </select>
-        </div>
+        <form id="myform">
+          <h3 class="sub-heading">Water Levels</h3>
+          <p>
+            Please choose a date & water site to view the water level
+            information.
+          </p>
+          <p id="currentWaterLevel"></p>
+          <div class="button-container">
+            <select id="date-selector">
+              <option value="">Select Date Range</option>
+              <option value="P1D">Today</option>
+              <option value="P7D">Last 7 Days</option>
+            </select>
+          </div>
+          <div class="button-container">
+            <select onchange="getData()" name="siteChoice" id="siteChoice">
+              <option value="">Select Water Site</option>
+              <option value="07055646">Boxley</option>
+              <option value="07055680">Pruitt</option>
+              <option value="07055780">Carver</option>
+              <option value="07055660">Ponca</option>
+            </select>
+          </div>
+        </form>
       </div>
     </main>
     <footer>
@@ -153,5 +154,10 @@
         Newton County Adventure Company &copy; | <a href="#top">Back to Top</a>
       </h6>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
