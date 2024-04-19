@@ -308,8 +308,12 @@ main {
 
 .socials a i:hover {
   color: #f27127;
-  transition: 0.4;
+  transition: 0.4s;
   cursor: pointer;
+}
+
+.title-card contact-info h2 {
+  text-decoration: none;
 }
 
 /*  --------------- Griffin CSS -----------------  */
