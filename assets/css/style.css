@@ -288,6 +288,11 @@ main {
 .contact-info h1 {
   margin-bottom: 3rem;
   margin-top: 3rem;
+  font-size: 4rem;
+}
+
+.contact-info h2 {
+  font-size: 2.4rem;
 }
 
 .socials {
@@ -297,6 +302,7 @@ main {
 
 .socials h2 {
   margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 .socials a {
