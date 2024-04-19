@@ -285,9 +285,12 @@ main {
   background-position: center;
 }
 
+.contact-info {
+  margin-top: 3rem;
+}
+
 .contact-info h1 {
   margin-bottom: 3rem;
-  margin-top: 3rem;
   font-size: 4rem;
 }
 
