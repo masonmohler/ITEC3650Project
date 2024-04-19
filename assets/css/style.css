@@ -99,8 +99,8 @@ body {
 }
 
 .main-logo {
-  width: 6rem;
-  height: 6rem;
+  width: 7rem;
+  height: 7rem;
   margin-right: 2rem;
 }
 
@@ -286,12 +286,12 @@ main {
 }
 
 .contact-info {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .contact-info h1 {
   margin-bottom: 3rem;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .contact-info h2 {
