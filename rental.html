@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body onload="getData()">
     <header class="content-page">
       <div class="main-nav content-nav">
         <nav>
@@ -119,39 +119,39 @@
       <div class="img-slider">
         <img class="canoe-img lower" src="assets/img/bg3.jpg" alt="" />
       </div>
-      <div class="placeholder">
-        <canvas id="chartjs-0" class="water-graph"></canvas>
-      </div>
       <div class="water-levels">
-        <form id="myform">
-          <h3 class="sub-heading">Water Levels</h3>
-          <p>
-            Please choose a date & water site to view the water level
-            information.
-          </p>
-          <p id="currentWaterLevel"></p>
-          <div class="button-container">
-            <select id="date-selector">
-              <option value="">Select Date Range</option>
-              <option value="P1D">Today</option>
-              <option value="P7D">Last 7 Days</option>
-            </select>
+        <h3 class="sub-heading left-align">Water Conditions</h3>
+        <p>
+          Below are the current water levels of the Buffalo River at the
+          specified put-in/take out spots.
+        </p>
+        <div class="graph-container">
+          <div class="graph">
+            <h4 class="graph-heading">Boxley</h4>
+            <p id="boxley-level"></p>
+            <canvas id="chartjs-0" class="water-graph"></canvas>
           </div>
-          <div class="button-container">
-            <select onchange="getData()" name="siteChoice" id="siteChoice">
-              <option value="">Select Water Site</option>
-              <option value="07055646">Boxley</option>
-              <option value="07055680">Pruitt</option>
-              <option value="07055780">Carver</option>
-              <option value="07055660">Ponca</option>
-            </select>
+          <div class="graph">
+            <h4 class="graph-heading">Ponca</h4>
+            <p id="ponca-level"></p>
+            <canvas id="chartjs-1" class="water-graph"></canvas>
           </div>
-        </form>
+          <div class="graph">
+            <h4 class="graph-heading">Pruitt</h4>
+            <p id="pruitt-level"></p>
+            <canvas id="chartjs-2" class="water-graph"></canvas>
+          </div>
+          <div class="graph">
+            <h4 class="graph-heading">Carver</h4>
+            <p id="carver-level"></p>
+            <canvas id="chartjs-3" class="water-graph"></canvas>
+          </div>
+        </div>
       </div>
     </main>
     <footer>
       <h6>
-        Newton County Adventure Company &copy; | <a href="#top">Back to Top</a>
+        &copy; Newton County Adventure Company | <a href="#top">Back to Top</a>
       </h6>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

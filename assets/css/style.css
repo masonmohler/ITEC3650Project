@@ -688,9 +688,9 @@ p {
 
 .rent {
   grid-template-areas:
-    "img prices"
-    "rent lower"
-    "graph water";
+    "prices img"
+    "lower rent"
+    "water water";
 }
 
 .canoe-img {
@@ -715,25 +715,40 @@ p {
   padding: 0;
 }
 
-.water-graph {
-  width: 100%;
-}
-
 .lower {
   grid-area: lower;
 }
 
-.placeholder {
-  grid-area: graph;
-}
-
 .water-levels {
   grid-area: water;
+  padding: 2rem;
+}
+
+.water-levels p {
+  text-align: left;
+  padding: 0;
+  margin-top: 1rem;
 }
 
 .canoe-content {
   line-height: 3rem;
   margin-bottom: 2rem;
+}
+
+.graph-heading {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.graph-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.water-graph {
+  width: 100%;
+  padding: 2rem;
 }
 
 /* Customize Previous/Next/Dots/Autoplay */
@@ -835,6 +850,10 @@ footer a {
     grid-template-columns: 1fr;
   }
 
+  .graph-container {
+    grid-template-columns: 1fr;
+  }
+
   .img-container,
   .lodging-img {
     max-width: 70vw;
@@ -848,6 +867,36 @@ footer a {
       "amen"
       "book-btns"
       "add-info";
+  }
+
+  .rent {
+    grid-template-areas:
+      "img"
+      "prices"
+      "lower"
+      "rent"
+      "water";
+  }
+
+  .rent-amount {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 70vw;
+    margin: auto;
+    padding: 0;
+  }
+
+  .rent-canoe {
+    width: 70vw;
+    margin-bottom: 1rem;
+  }
+
+  .book-now {
+    width: 70vw;
+  }
+
+  .detail-button {
+    width: 70vw;
   }
 }
 
