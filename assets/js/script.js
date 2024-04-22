@@ -59,7 +59,7 @@ async function getData() {
         labels: dates,
         datasets: [
           {
-            label: sitename,
+            label: "Depth of " + sitename + " in Feet",
             data: values,
             fill: true,
             backgroundColor: "rgb(242, 113, 39, 0.5)",
@@ -69,6 +69,11 @@ async function getData() {
         ],
       },
       options: {
+        legend: {
+          labels: {
+            fontColor: "#FFFFFF",
+          },
+        },
         scales: {
           xAxes: [
             {
@@ -100,7 +105,7 @@ async function getData() {
         },
         title: {
           display: true,
-          text: "River Level 7 Day History",
+          text: "7 Day History",
           fontColor: "#FFFFFF",
         },
       },
@@ -141,6 +146,11 @@ async function getData() {
         ],
       },
       options: {
+        legend: {
+          labels: {
+            fontColor: "#FFFFFF",
+          },
+        },
         scales: {
           xAxes: [
             {
@@ -172,7 +182,8 @@ async function getData() {
         },
         title: {
           display: true,
-          text: "River Level 7 Day History",
+          text: "7 Day History",
+          fontColor: "#FFFFFF",
         },
       },
     });
@@ -212,6 +223,11 @@ async function getData() {
         ],
       },
       options: {
+        legend: {
+          labels: {
+            fontColor: "#FFFFFF",
+          },
+        },
         scales: {
           xAxes: [
             {
@@ -243,7 +259,8 @@ async function getData() {
         },
         title: {
           display: true,
-          text: "River Level 7 Day History",
+          text: "7 Day History",
+          fontColor: "#FFFFFF",
         },
       },
     });
@@ -283,6 +300,11 @@ async function getData() {
         ],
       },
       options: {
+        legend: {
+          labels: {
+            fontColor: "#FFFFFF",
+          },
+        },
         scales: {
           xAxes: [
             {
@@ -314,7 +336,8 @@ async function getData() {
         },
         title: {
           display: true,
-          text: "River Level 7 Day History",
+          text: "7 Day History",
+          fontColor: "#FFFFFF",
         },
       },
     });
