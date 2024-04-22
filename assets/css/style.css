@@ -420,12 +420,6 @@ main {
   padding-top: 1rem;
 }
 
-/*  --------------- Canoe Page -----------------  */
-
-.canoe-img {
-  width: 100vw;
-}
-
 /*  --------------- End of Griffin CSS -----------------  */
 
 /*  --------------- Overwrite of Griffin CSS -----------------  */
@@ -435,6 +429,7 @@ main {
   height: auto;
   box-shadow: 1px 3px 5px #101010;
   border: 10px solid #4b594a;
+  max-width: 100%;
 }
 
 .img-container {
@@ -691,6 +686,7 @@ p {
     "prices img"
     "lower rent"
     "water water";
+  justify-content: center;
 }
 
 .canoe-img {
@@ -744,11 +740,12 @@ p {
   margin-top: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 100%;
 }
 
 .water-graph {
   width: 100%;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 /* Customize Previous/Next/Dots/Autoplay */
@@ -857,6 +854,7 @@ footer a {
   .img-container,
   .lodging-img {
     max-width: 70vw;
+    margin: auto;
     padding-bottom: 0;
   }
 

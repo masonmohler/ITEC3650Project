@@ -64,14 +64,35 @@ async function getData() {
             fill: true,
             backgroundColor: "rgb(242, 113, 39, 0.5)",
             borderColor: "rgb(242, 113, 39)",
-            color: "rgb(255, 255, 255)",
             lineTension: 0.1,
           },
         ],
       },
       options: {
+        scales: {
+          xAxes: [
+            {
+              ticks: {
+                fontColor: "#FFFFFF",
+              },
+              gridLines: {
+                color: "rgba(0, 0, 0, 0)",
+              },
+            },
+          ],
+          yAxes: [
+            {
+              ticks: {
+                fontColor: "#FFFFFF",
+              },
+              gridLines: {
+                color: "rgba(0, 0, 0, 0)",
+              },
+            },
+          ],
+        },
         intersect: true,
-        responsive: false,
+        responsive: true,
         maintainAspectRatio: true,
         interaction: {
           // Overrides the global setting
@@ -80,6 +101,7 @@ async function getData() {
         title: {
           display: true,
           text: "River Level 7 Day History",
+          fontColor: "#FFFFFF",
         },
       },
     });
@@ -103,7 +125,7 @@ async function getData() {
 
     // code for chart 1
     let ctx1 = document.getElementById("chartjs-1");
-    var myChart2 = new Chart(ctx1, {
+    var myChart1 = new Chart(ctx1, {
       type: "line",
       data: {
         labels: dates1,
@@ -119,8 +141,30 @@ async function getData() {
         ],
       },
       options: {
+        scales: {
+          xAxes: [
+            {
+              ticks: {
+                fontColor: "#FFFFFF",
+              },
+              gridLines: {
+                color: "rgba(0, 0, 0, 0)",
+              },
+            },
+          ],
+          yAxes: [
+            {
+              ticks: {
+                fontColor: "#FFFFFF",
+              },
+              gridLines: {
+                color: "rgba(0, 0, 0, 0)",
+              },
+            },
+          ],
+        },
         intersect: true,
-        responsive: false,
+        responsive: true,
         maintainAspectRatio: true,
         interaction: {
           // Overrides the global setting
@@ -168,8 +212,30 @@ async function getData() {
         ],
       },
       options: {
+        scales: {
+          xAxes: [
+            {
+              ticks: {
+                fontColor: "#FFFFFF",
+              },
+              gridLines: {
+                color: "rgba(0, 0, 0, 0)",
+              },
+            },
+          ],
+          yAxes: [
+            {
+              ticks: {
+                fontColor: "#FFFFFF",
+              },
+              gridLines: {
+                color: "rgba(0, 0, 0, 0)",
+              },
+            },
+          ],
+        },
         intersect: true,
-        responsive: false,
+        responsive: true,
         maintainAspectRatio: true,
         interaction: {
           // Overrides the global setting
@@ -217,8 +283,30 @@ async function getData() {
         ],
       },
       options: {
+        scales: {
+          xAxes: [
+            {
+              ticks: {
+                fontColor: "#FFFFFF",
+              },
+              gridLines: {
+                color: "rgba(0, 0, 0, 0)",
+              },
+            },
+          ],
+          yAxes: [
+            {
+              ticks: {
+                fontColor: "#FFFFFF",
+              },
+              gridLines: {
+                color: "rgba(0, 0, 0, 0)",
+              },
+            },
+          ],
+        },
         intersect: true,
-        responsive: false,
+        responsive: true,
         maintainAspectRatio: true,
         interaction: {
           // Overrides the global setting
