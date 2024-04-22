@@ -59,7 +59,7 @@ async function getData() {
         labels: dates,
         datasets: [
           {
-            label: "Depth of " + sitename + " in Feet",
+            label: "Depth in Feet",
             data: values,
             fill: true,
             backgroundColor: "rgb(242, 113, 39, 0.5)",
@@ -136,7 +136,7 @@ async function getData() {
         labels: dates1,
         datasets: [
           {
-            label: sitename1,
+            label: "Depth in Feet",
             data: values1,
             fill: true,
             backgroundColor: "rgb(242, 113, 39, 0.5)",
@@ -213,7 +213,7 @@ async function getData() {
         labels: dates2,
         datasets: [
           {
-            label: sitename2,
+            label: "Depth in Feet",
             data: values2,
             fill: true,
             backgroundColor: "rgb(242, 113, 39, 0.5)",
@@ -290,7 +290,7 @@ async function getData() {
         labels: dates3,
         datasets: [
           {
-            label: sitename3,
+            label: "Depth in Feet",
             data: values3,
             fill: true,
             backgroundColor: "rgb(242, 113, 39, 0.5)",
